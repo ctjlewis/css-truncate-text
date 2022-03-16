@@ -1,7 +1,7 @@
 {
-  "name": "text-truncate-demo",
+  "name": "css-truncate-text",
   "platform": "browser",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "style": "dist/styles.css",
@@ -22,7 +22,7 @@
     "start": "next start",
     "lint": "next lint --fix",
     "test": "ava",
-    "prepublishOnly": "yarn build && yarn test"
+    "prepublishOnly": "yarn export && yarn build && yarn test"
   },
   "ava": {
     "timout": 240000,
