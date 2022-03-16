@@ -1,0 +1,37 @@
+.truncated-paragraph {
+  @apply w-full max-h-full hidden overflow-hidden;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp, 4);
+  --line-clamp: 4;
+}
+
+@media (min-width: 320px) {
+  .truncated-paragraph {
+    display: -webkit-box;
+  }
+}
+
+@media (min-width: 376px) {
+  .truncated-paragraph {
+    --line-clamp: 6;
+  }
+}
+
+@media (min-width: 476px) {
+  .truncated-paragraph {
+    --line-clamp: 8;
+  }
+}
+
+@media (min-width: 576px) {
+  .truncated-paragraph {
+    --line-clamp: 10;
+  }
+}
+
+@media (min-width: 676px) {
+  .truncated-paragraph {
+    --line-clamp: none;
+  }
+}
